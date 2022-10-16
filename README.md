@@ -2,9 +2,9 @@
 
 ## Summary
 
-In short, this project analyzes the correlation between the number of permits issued within a zipcode and the housing values within that same zipcode.  The analysis was focused on Philadelphia, Pennsylvania and utilized permit data from https://www.opendataphilly.org/ along with housing price data from https://www.zillow.com/research/data/.
+The goal of this project was to determine whether the number of permits issued in a given zip code within prior years is correlated to property value and changes of property values within the zip code.  The assumption going in was that the amount of permits issued within a zip code should have some correlation with the future housing prices and change in housing prices.  Thus the theory was that if we're designing a machine learning model, the inclusion of permits would improve the model. 
 
-The goal of this project was to determine whether the number of permits issued in a given zip code within prior years is correlated to property value and changes of property values within the zip code.  The assumption going in is that building permits that better the buildings within a zip code should have some correlation with the future housing prices and change in housing prices.  Thus the theory is that if we're designing a machine learning model, the inclusion of permits would improve the model. 
+The analysis was focused on Philadelphia, Pennsylvania and utilized permit data from https://www.opendataphilly.org/ along with housing price data from https://www.zillow.com/research/data/.
 
 ## Analysis
 
