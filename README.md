@@ -2,15 +2,15 @@
 
 ## Summary
 
-In short, this project analyzes the correlation between the number of permits issued within a zipcode and the housing values within that same zipcode.  The analysis was focused on Philadelphia, Pennsylvania and utilized permit data from https://www.opendataphilly.org/ along with housing price data from https://www.zillow.com/research/data/.  
+In short, this project analyzes the correlation between the number of permits issued within a zipcode and the housing values within that same zipcode.  The analysis was focused on Philadelphia, Pennsylvania and utilized permit data from https://www.opendataphilly.org/ along with housing price data from https://www.zillow.com/research/data/.
 
 The goal of this project was to determine whether the number of permits issued in a given zip code within prior years is correlated to property value and changes of property values within the zip code.  The assumption going in is that building permits that better the buildings within a zip code should have some correlation with the future housing prices and change in housing prices.  Thus the theory is that if we're designing a machine learning model, the inclusion of permits would improve the model. 
 
 ## Analysis
 
-(Note: More in-depth analysis included in Jupyter Notebook file)
+(Note: More in-depth analysis included in the [Jupyter Notebook File](https://github.com/JohnnyKile/Property-Value-Prediction-Model-Analysis/blob/main/Property%20Value%20Prediction%20Model%20Analysis.ipynb))
 
-After processing the data (see Jupyter Notebook for further insight), the resultant DataFrame had the following columns:
+After processing the data (see [Jupyter Notebook File](https://github.com/JohnnyKile/Property-Value-Prediction-Model-Analysis/blob/main/Property%20Value%20Prediction%20Model%20Analysis.ipynb) for further insight), the resultant DataFrame had the following columns:
 
 - `zipcode`: zipcode
 - `year`: year
@@ -28,7 +28,7 @@ The permit data had 25 unique permit types which included mechanical permits, de
 
 ### Future Property Value Models - Selected Permits
 
-Analysis was done to find the permit types that had the highest correlation coefficient with the `hv_1yf` column which is the column for housing value one year in the future.  The permit types that had a correlation coefficient of 0.4 or higher with the `hv_1yf` column were selected and the following was the revised correlation matrix (see Jupyter Notebook for further insight).:
+Analysis was done to find the permit types that had the highest correlation coefficient with the `hv_1yf` column which is the column for housing value one year in the future.  The permit types that had a correlation coefficient of 0.4 or higher with the `hv_1yf` column were selected and the following was the revised correlation matrix (see [Jupyter Notebook File](https://github.com/JohnnyKile/Property-Value-Prediction-Model-Analysis/blob/main/Property%20Value%20Prediction%20Model%20Analysis.ipynb) for further insight).:
 
 ![](https://github.com/JohnnyKile/Property-Value-Prediction-Model-Analysis/blob/main/images/readme-image2.png?raw=true)
 
@@ -36,7 +36,7 @@ A model was built utilizing linear regression after ruling out polynominal regre
 
 ### Future Property Value Models - Selected Permits
 
-Analysis was done to find the permit types that had the highest correlation coefficient with the `pc_1yf` column which is the column for YOY percent change one year in the future.  The permit types that had a correlation coefficient of -0.3 or lower with the `pc_1yf` column were selected.  The only permit type that met that criteria was 'Demolition Permit'.  The following was the revised correlation matrix (see Jupyter Notebook for further insight).:
+Analysis was done to find the permit types that had the highest correlation coefficient with the `pc_1yf` column which is the column for YOY percent change one year in the future.  The permit types that had a correlation coefficient of -0.3 or lower with the `pc_1yf` column were selected.  The only permit type that met that criteria was 'Demolition Permit'.  The following was the revised correlation matrix (see [Jupyter Notebook File](https://github.com/JohnnyKile/Property-Value-Prediction-Model-Analysis/blob/main/Property%20Value%20Prediction%20Model%20Analysis.ipynb) for further insight).:
 
 ![](https://github.com/JohnnyKile/Property-Value-Prediction-Model-Analysis/blob/main/images/readme-image3.png?raw=true)
 
